@@ -4,7 +4,7 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $UPSTREAM_REPO == "Gamerzbot" ]]
+    if [[ $UPSTREAM_REPO == "Cheems" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL3NhbmR5MTcwOS9jYXR1c2VyYm90L2FyY2hpdmUvbWFzdGVyLnppcA==" | base64 -d
     elif [[ $UPSTREAM_REPO == "Gamerzbot" ]]
@@ -37,7 +37,7 @@ _set_bot () {
     rm -rf "$zippath"
     sleep 5
     cd $CATPATH
-    echo "    Starting GamerzBot    "
+    echo "    Starting Cheems    "
     echo "
                         
     echo "
