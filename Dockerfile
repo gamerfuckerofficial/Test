@@ -1,13 +1,13 @@
 FROM sandy1709/catuserbot:alpine
 
 #clonning repo 
-RUN git clone https://github.com/gamerfuckerofficial/Gamerzbot.git /root/telebot
+RUN git clone https://github.com/gamerfuckerofficial/Cheems.git /root/userbot
 #working directory 
-WORKDIR /root/telebot
+WORKDIR /root/userbot
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
 ENV PATH="/home/userbot/bin:$PATH"
 
-CMD ["python3","-m","telebot"]
+CMD ["python3","-m","userbot"]
